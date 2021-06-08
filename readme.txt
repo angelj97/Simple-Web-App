@@ -1,0 +1,1 @@
+Simple web app project with basic functions such as register/login to learn go.
