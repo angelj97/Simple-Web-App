@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Web App</title>
+  <meta name="description" content="NotePlus">
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+  <table class="layout" id="maincontent">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <div id="logo">
+            <h1>Web App</h1>
+          </div>
+          <form method="POST" novalidate >
+            <table>
+              <tr>
+                <p class="error">{{ . }}</p>
+                <td>Username
+                </td>
+                <td colspan="2">
+                  <input type="text" name="username" id="username" class="inputtext" maxlength="100">
+                </td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td colspan="2">
+                  <input type="password" name="password" id="password" class="inputtext" required="required"
+                    maxlength="100">
+                </td>
+              </tr>
+              <tr>
+                <td>Confirm Password</td>
+                <td colspan="2">
+                  <input type="password" name="password2" id="password" class="inputtext" required="required"
+                    maxlength="100">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="/">Back</a></td>
+                <td align="right"><button type="submit">Create Account</button></td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

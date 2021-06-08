@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Web App</title>
+  <meta name="description" content="NotePlus">
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+  <table class="layout" id="maincontent">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <div id="logo">
+            <h1>Web App</h1>
+          </div>
+          <form method="POST" nonvalidate>
+            <table>
+                <p class="error">{{ . }}</p>
+              <tr>
+                <td>Username
+                </td>
+                <td colspan="2">
+                  <input type="text" name="username" id="username" class="inputtext" required="required" maxlength="20"
+                    pattern="[A-Za-z0-9_?]{1,20}">
+                </td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td colspan="2">
+                  <input type="password" name="password" id="password" class="inputtext" required="required"
+                    maxlength="100" pattern=".{6,100}">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="/register">Register</a></td>
+                <td align="right"><button type="submit">Login</button></td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
